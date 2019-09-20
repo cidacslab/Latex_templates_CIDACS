@@ -1,7 +1,4 @@
-%\documentclass{beamer}
-%\usetheme{Antibes}
 
-%\usepackage{graphicx}
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -19,27 +16,9 @@
 \setbeamertemplate{itemize subitem}[square]
 \setbeamertemplate{itemize subsubitem}[triangle]
 
-%\pgfdeclareimage[width=\paperwidth]{mybackground}{title_page.png}
-%
-%\setbeamertemplate{title page}{
-%
-%        \begin{picture}(0,0)
-%
-%            \put(-30,-120){%
-%                \pgfuseimage{mybackground}
-%            }
-%
-%            \put(0,-110.7){%
-%                \begin{minipage}[b][35mm][t]{226mm}
-%                    \usebeamerfont{title}{\inserttitle\par}
-%                \end{minipage}
-%            }
-%
-%            \end{picture}
-%
-%    }
 
-\title[...]{My title}
+\title{\color{black} \textbf{Title}}
+\author{Juliane F Oliveira \\ Ph.D in Mathematics \\ Postdoctoral researcher at CIDACS}
 
 \usebackgroundtemplate%
 {%
@@ -49,11 +28,11 @@
 
 \begin{document}
 
-    \begin{frame}[plain]
-        \begin{minipage}[b][15mm][t]{200mm}
-            \usebeamerfont{title}{\inserttitle\par}
-         \end{minipage}
-    \end{frame}
+   
+   \begin{frame}[plain]
+    \vspace{2.5cm}
+    \maketitle
+   \end{frame}
 
     \section{Introduction}
 
