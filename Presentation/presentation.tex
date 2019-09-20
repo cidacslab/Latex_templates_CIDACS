@@ -1,0 +1,80 @@
+%\documentclass{beamer}
+%\usetheme{Antibes}
+
+%\usepackage{graphicx}
+\documentclass[bigger]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{xcolor}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{frametitle}{fg=black}
+\usebeamercolor[fg]{normal text}
+
+\setbeamercolor{itemize item}{fg=orange}
+\setbeamercolor{itemize subitem}{fg=orange}
+\setbeamercolor{itemize subsubitem}{fg=orange}
+
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[square]
+\setbeamertemplate{itemize subsubitem}[triangle]
+
+%\pgfdeclareimage[width=\paperwidth]{mybackground}{title_page.png}
+%
+%\setbeamertemplate{title page}{
+%
+%        \begin{picture}(0,0)
+%
+%            \put(-30,-120){%
+%                \pgfuseimage{mybackground}
+%            }
+%
+%            \put(0,-110.7){%
+%                \begin{minipage}[b][35mm][t]{226mm}
+%                    \usebeamerfont{title}{\inserttitle\par}
+%                \end{minipage}
+%            }
+%
+%            \end{picture}
+%
+%    }
+
+\title[...]{My title}
+
+\usebackgroundtemplate%
+{%
+    \includegraphics[width=13cm,height=9.4cm]{title_page.png}%
+}
+
+
+\begin{document}
+
+    \begin{frame}[plain]
+        \begin{minipage}[b][15mm][t]{200mm}
+            \usebeamerfont{title}{\inserttitle\par}
+         \end{minipage}
+    \end{frame}
+
+    \section{Introduction}
+
+% Local background must be enclosed by curly braces for grouping.
+{
+\usebackgroundtemplate{\includegraphics[width=13cm,height=9.4cm]{body_page.png}}%
+\begin{frame}{ Introduction}
+\begin{itemize}
+\item 1
+\item 2
+\item 3
+\end{itemize}
+\end{frame}
+}
+
+{
+\usebackgroundtemplate{\includegraphics[width=13cm,height=9.4cm]{last_page.png}}%
+\begin{frame}{ }
+
+\end{frame}
+}
+
+\end{document}
+
